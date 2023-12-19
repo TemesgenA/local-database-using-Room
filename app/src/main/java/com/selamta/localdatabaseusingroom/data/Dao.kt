@@ -10,5 +10,5 @@ interface ArticleDao {
     suspend fun addArticle(article: Article)
 
     @Query("SELECT * FROM article_table")
-    suspend fun getAllArticles(): List<Article>
+    fun getAllArticles(): List<Article>
 }
